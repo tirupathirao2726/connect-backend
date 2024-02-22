@@ -7,11 +7,11 @@ export class ChatMessage {
     @PrimaryGeneratedColumn("uuid", { name: 'message_id' })
     messageId: string;
 
-    @ManyToOne(() => User)
+    @ManyToOne(() => User,{cascade: false,onDelete:'SET NULL'})
     @JoinColumn({ name: 'sender_id' })
     sender: User;
 
-    @ManyToOne(() => User)
+    @ManyToOne(() => User,{cascade: false, onDelete:'SET NULL'})
     @JoinColumn({ name: 'receiver_id' })
     receiver: User;
 
