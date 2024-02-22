@@ -18,4 +18,7 @@ export class ChatMessage {
     @Column({ name: 'message', type: 'text' })
     message: any;
 
+    @Column({name:'message_sent_at',type:'timestamptz'})
+    messageSentAt:Date;
+
 }
