@@ -1,4 +1,4 @@
-export class JwtPayload{
+export class JwtPayloadDTO{
   sub:string;
   name:string;
 }
