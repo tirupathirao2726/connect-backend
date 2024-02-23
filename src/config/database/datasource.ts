@@ -10,6 +10,6 @@ export const dataSource  =  new DataSource({
   host:'localhost',
   port:5432,
   entities:[...entities],
-  logging:true,
+  // logging:true,
   synchronize:true,
 })
