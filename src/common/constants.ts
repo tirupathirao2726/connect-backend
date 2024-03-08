@@ -1,1 +1,1 @@
-export const jwtSecretKey = "Neku avasarama bro";
+export const jwtSecretKey = 'Neku avasarama bro';
